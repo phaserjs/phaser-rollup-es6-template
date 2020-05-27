@@ -1,0 +1,24 @@
+{
+    "name": "@phaserjs/phaser-rollup-es6-template",
+    "version": "1.0.0",
+    "description": "Phaser 4 Rollup + ES6 Template",
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -c -w",
+        "dev": "npm-run-all --parallel start watch",
+        "start": "serve public"
+    },
+    "devDependencies": {
+        "@phaserjs/phaser": "0.0.22",
+        "@rollup/plugin-image": "^2.0.5",
+        "@rollup/plugin-node-resolve": "^8.0.0",
+        "npm-run-all": "^4.1.5",
+        "rollup": "^2.10.9",
+        "rollup-plugin-filesize": "^9.0.0",
+        "rollup-plugin-terser": "^6.1.0",
+        "serve": "^11.3.1"
+    }
+}
